@@ -1,0 +1,66 @@
+[
+    {
+        "name":"samsang s20 ultra" ,
+        "price":245.67,
+        "description":"samsang mobile",
+        "rating":4.8,
+        "images":[
+            {
+                "image":"s20ultra.png"
+            }
+        ],
+        "category":"Mobile Phone",
+        "seller":"Amazon",
+        "stack":15,
+        "numOfReviews":15,
+        "reviews":[]
+    },
+    {
+        "name":"redmi note 10 pro max" ,
+        "price":205.67,
+        "description":"redmi mobile",
+        "rating":4.3,
+        "images":[
+            {
+                "image":"note10promax.png"
+            }
+        ],
+        "category":"Mobile Phone",
+        "seller":"Amazon",
+        "stack":10,
+        "numOfReviews":14,
+        "reviews":[]
+    },
+    {
+        "name":"intel i5 14600k" ,
+        "price":205.67,
+        "description":"desktop processer",
+        "rating":4.3,
+        "images":[
+            {
+                "image":"i514thgen.png"
+            }
+        ],
+        "category":"Electronics",
+        "seller":"Amazon",
+        "stack":10,
+        "numOfReviews":14,
+        "reviews":[]
+    },
+    {
+        "name":"intel i3 14600" ,
+        "price":190.67,
+        "description":"desktop processer",
+        "rating":4.3,
+        "images":[
+            {
+                "image":"i314thgen.png"
+            }
+        ],
+        "category":"Electronics",
+        "seller":"Amazon",
+        "stack":10,
+        "numOfReviews":14,
+        "reviews":[]
+    }
+]
