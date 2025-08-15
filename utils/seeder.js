@@ -1,5 +1,5 @@
 const products = require('../data/products.json') 
-const Product = require('../Model/product.model')
+const Product = require('../Model/productModel')
 const dotenv = require ('dotenv')
 const path = require ('path')
 const connectDatabase = require('../Config/dataBase')
