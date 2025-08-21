@@ -1,29 +1,28 @@
 class APIFeature {
-    constructor(query, queryStr){
+    constructor(products, query){
+        this.products = products
         this.query = query
-        this.queryStr = queryStr
     }
 
     search(){
-        let productName = this.queryStr.productName?{
+        let productName = this.query.productName?{
             name:{
-                $regex:this.queryStr.productName,
+                $regex:this.query.productName,
                 $options: 'i'
             }  
         }:{}
-        this.query.find({...productName})
+        this.products.find({...productName})
         return this;
     } 
 
     filter() {
-        const queryStrCopy = { ...this.queryStr };
+        const queryCopy = { ...this.query };
         const removeFields = ['productName', 'limit', 'page'];
-        removeFields.forEach(field => delete queryStrCopy[field]);
+        removeFields.forEach(field => delete queryCopy[field]);
 
         const normalized = {};
-        for (const key in queryStrCopy) {
-            console.log(queryStrCopy,key)
-            const val = isNaN(queryStrCopy[key]) ? queryStrCopy[key] : Number(queryStrCopy[key]);
+        for (const key in queryCopy) {
+            const val = isNaN(queryCopy[key]) ? queryCopy[key] : Number(queryCopy[key]);
             const match = key.match(/^([^\[\]]+)\[([^\]]+)\]$/);
 
             if (match) {
@@ -34,17 +33,17 @@ class APIFeature {
                 normalized[key] = val;
             }
         }
-        let queryStr = JSON.stringify(normalized);
+        let query = JSON.stringify(normalized);
 
-        queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, match => `$${match}`);
-        this.query.find(JSON.parse(queryStr));
+        query = query.replace(/\b(gt|gte|lt|lte)\b/g, match => `$${match}`);
+        this.products.find(JSON.parse(query));
         return this;
     }
 
     pageinte(resPerPage){
-        const currentPage = Number(this.queryStr.page) || 1; 
+        const currentPage = Number(this.query.page) || 1; 
         const skip = resPerPage *  (currentPage -1);
-        this.query.limit(resPerPage).skip(skip);
+        this.products.limit(resPerPage).skip(skip);
         return this;
     }
 }

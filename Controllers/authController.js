@@ -12,8 +12,6 @@ exports.registerUser = catchAsyncError(async (req,res,next)=>{
         avater
     })
 
-    const token = user.getJwToken();
-
     sendToken(user,200,res)
 })
 

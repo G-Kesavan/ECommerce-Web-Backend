@@ -3,11 +3,11 @@ const { getAllProduct, postNewProduct, getSingleProduct, upDateProduct, deletePr
 const { isAuthenticatedUser } = require('../Middleware/authenticate')
 const router = express.Router()
 
-router.route('/get-all-product').get(isAuthenticatedUser,getAllProduct)
-router.route('/create-new-product').post(postNewProduct)
+router.route('/get-products').get(isAuthenticatedUser,getAllProduct)
+router.route('/create-product').post(postNewProduct)
 router.route('/product/:id')
                             .get(getSingleProduct)
-                            .put(upDateProduct) 
+                            .put(upDateProduct)
                             .delete(deleteProduct)
 
 module.exports = router

@@ -7,8 +7,10 @@ const cookieParser = require('cookie-parser')
 
 app.use(express.json())
 app.use(cookieParser())
+
 app.use('/products',productsRoute)
 app.use('/user',authRoute)
+
 app.use(catchError)
 
 module.exports = app

@@ -5,11 +5,11 @@ module.exports = (err,req,res,next) => {
 
     if(process.env.NODE_ENV == 'development'){
         res.status(err.statusCode).json({
-        succes : false,
-        message : err.message,
-        stack:err.stack,
-        error:err
-    })
+            succes : false,
+            message : err.message,
+            stack:err.stack,
+            error:err
+        })
     }
    
     if(process.env.NODE_ENV == 'production'){
@@ -27,8 +27,8 @@ module.exports = (err,req,res,next) => {
         }
 
         res.status(err.statusCode).json({
-        succes : false,
-        message : error.message
-    })
+            succes : false,
+            message : error.message
+        })
     }
 }
