@@ -4,7 +4,7 @@ class APIFeature {
         this.query = query
     }
 
-    search(){
+    search(){   //SEARCH FEATURES
         let productName = this.query.productName?{
             name:{
                 $regex:this.query.productName,
@@ -15,12 +15,12 @@ class APIFeature {
         return this;
     } 
 
-    filter() {
+    filter() {      //FILTER FEATURES
         const queryCopy = { ...this.query };
         const removeFields = ['productName', 'limit', 'page'];
         removeFields.forEach(field => delete queryCopy[field]);
 
-        const normalized = {};
+        const normalized = {};      //NORMALIZED
         for (const key in queryCopy) {
             const val = isNaN(queryCopy[key]) ? queryCopy[key] : Number(queryCopy[key]);
             const match = key.match(/^([^\[\]]+)\[([^\]]+)\]$/);
@@ -40,7 +40,7 @@ class APIFeature {
         return this;
     }
 
-    pageinte(resPerPage){
+    pageinte(resPerPage){       //PAGES CONTROLL FEATURES
         const currentPage = Number(this.query.page) || 1; 
         const skip = resPerPage *  (currentPage -1);
         this.products.limit(resPerPage).skip(skip);

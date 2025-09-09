@@ -1,13 +1,18 @@
 const express = require('express')
-const { getAllProduct, postNewProduct, getSingleProduct, upDateProduct, deleteProduct } = require('../Controllers/productController')
-const { isAuthenticatedUser } = require('../Middleware/authenticate')
+const { getAllProducts, addNewProduct, getProduct, updateProduct, deleteProduct, createReview, getReview, deleteReview } = require('../Controllers/productController')
+const { isAuthenticatedUser, authorizeRoles } = require('../Middleware/authenticate')
 const router = express.Router()
 
-router.route('/get-products').get(isAuthenticatedUser,getAllProduct)
-router.route('/create-product').post(postNewProduct)
+router.route('/get-products').get(getAllProducts)
+router.route('/create-product').post(isAuthenticatedUser, authorizeRoles('admin'), addNewProduct)
+router.route('/review')
+                        .put(isAuthenticatedUser, createReview)
+                        .delete(deleteReview)
+
+router.route('/get-reviews').get(isAuthenticatedUser, getReview)
 router.route('/product/:id')
-                            .get(getSingleProduct)
-                            .put(upDateProduct)
+                            .get(getProduct)
+                            .put(updateProduct)
                             .delete(deleteProduct)
 
 module.exports = router

@@ -26,6 +26,21 @@ module.exports = (err,req,res,next) => {
             error = new ErrorHandler(message, 400);
         }
 
+        if (err.code === 11000) {
+            message = `Duplicate ${Object.keys(err.keyValue)} error `;
+            error = new ErrorHandler(message, 400);
+        }
+
+        if (err.name === 'JSONWedTokenError') {
+            message = `Json webtoken is invalied error `;
+            error = new ErrorHandler(message, 400);
+        }
+
+        if (err.name === 'TokenExpiredError') {
+            message = `Json webtoken is expired error `;
+            error = new ErrorHandler(message, 400);
+        }
+
         res.status(err.statusCode).json({
             succes : false,
             message : error.message

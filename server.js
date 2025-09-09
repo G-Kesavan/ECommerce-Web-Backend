@@ -9,8 +9,10 @@ connectDatabase()
 let PORT = process.env.PORT
 let NODE_ENV = process.env.NODE_ENV
 
+//LISTENING PORT
 const server = app.listen(PORT, () => console.log(`App listening on port ${PORT} and this is ${NODE_ENV} environment`))
 
+//Error Handle
 process.on('unhandledRejection',(err) => {
     console.log(`error: ${err.message}`)
     console.log('Shutting down the server due to Unhandled Rejection')
@@ -18,11 +20,10 @@ process.on('unhandledRejection',(err) => {
         process.exit(1)
     })
 })
-
 process.on('uncaughtException',(err) => {
     console.log(`error: ${err.message}`)
     console.log('Shutting down the server due to Uncaught exception')
     server.close(()=>{
         process.exit(1)
     })
-})  
+}) 

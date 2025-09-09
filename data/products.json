@@ -3,7 +3,7 @@
         "name":"samsang s20 ultra" ,
         "price":245.67,
         "description":"samsang 5G mobile",
-        "rating":4.8,
+        "ratings":4.8,
         "images":[
             {
                 "image":"s20ultra.png"
@@ -11,7 +11,7 @@
         ],
         "category":"Mobile Phone",
         "seller":"Amazon",
-        "stack":15,
+        "stock":15,
         "numOfReviews":12,
         "reviews":[]
     },
@@ -19,7 +19,7 @@
         "name":"redmi note 10 pro max" ,
         "price":160.67,
         "description":"redmi 4G mobile",
-        "rating":4.3,
+        "ratings":4.3,
         "images":[
             {
                 "image":"note10promax.png"
@@ -27,7 +27,7 @@
         ],
         "category":"Mobile Phone",
         "seller":"Amazon",
-        "stack":10,
+        "stock":10,
         "numOfReviews":14,
         "reviews":[]
     },
@@ -35,7 +35,7 @@
         "name":"intel i5 14600k" ,
         "price":210.67,
         "description":"desktop processer",
-        "rating":4.3,
+        "ratings":4.3,
         "images":[
             {
                 "image":"i514thgen.png"
@@ -43,7 +43,7 @@
         ],
         "category":"Electronics",
         "seller":"Amazon",
-        "stack":10,
+        "stock":10,
         "numOfReviews":11,
         "reviews":[]
     },
@@ -51,7 +51,7 @@
         "name":"intel i3 14600" ,
         "price":190.67,
         "description":"desktop processer",
-        "rating":4.3,
+        "ratings":4.3,
         "images":[
             {
                 "image":"i314thgen.png"
@@ -59,7 +59,7 @@
         ],
         "category":"Electronics",
         "seller":"Amazon",
-        "stack":9,
+        "stock":9,
         "numOfReviews":14,
         "reviews":[]
     },
@@ -67,7 +67,7 @@
         "name":"samsang 2TB nvme SSD" ,
         "price":190.67,
         "description":"desktop component for Storage purpose",
-        "rating":4.3,
+        "ratings":4.3,
         "images":[
             {
                 "image":"2TBSSD.png"
@@ -75,7 +75,7 @@
         ],
         "category":"Electronics",
         "seller":"Amazon",
-        "stack":5,
+        "stock":5,
         "numOfReviews":14,
         "reviews":[]
     },
@@ -83,7 +83,7 @@
         "name":"sens 2020 ear boutes" ,
         "price":110.67,
         "description":"basic usage for sound purpose",
-        "rating":4.1,
+        "ratings":4.1,
         "images":[
             {
                 "image":"sens2020.png"
@@ -91,7 +91,7 @@
         ],
         "category":"Headphones",
         "seller":"Amazon",
-        "stack":9,
+        "stock":9,
         "numOfReviews":14,
         "reviews":[]
     },
@@ -99,7 +99,7 @@
         "name":"Rech dad poor dad" ,
         "price":54.67,
         "description":"Mony Make releted Books",
-        "rating":4.8,
+        "ratings":4.8,
         "images":[
             {
                 "image":"RechDadPoor.png"
@@ -107,7 +107,7 @@
         ],
         "category":"Books",
         "seller":"Amazon",
-        "stack":500,
+        "stock":500,
         "numOfReviews":156,
         "reviews":[]
     }

@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema({
         type:String,
         required:[true,"plece enter the decription"]
     },
-    rating:{
+    ratings:{
         type:String,
         default:0
     },
@@ -51,7 +51,7 @@ const productSchema = new mongoose.Schema({
         type:String,
         required:[true,"pleace enter seller"]
     },
-    stack:{
+    stock:{
         type:Number,
         required:[true,"pleace enter stock"],
         maxLength:[20,'pleace stock connot exceed 20']
@@ -62,11 +62,8 @@ const productSchema = new mongoose.Schema({
     },
     reviews:[
         {
-            name:{
-                type:String,
-                required:[true,"pleace enter the review name"]
-            },
-            reting:{
+            user:mongoose.Schema.Types.ObjectId,
+            rating:{
                 type:String,
                 required:[true,"pleace enter the rating"]
             },
@@ -76,6 +73,9 @@ const productSchema = new mongoose.Schema({
             }
         }
     ],
+    user:{
+        type: mongoose.Schema.Types.ObjectId
+    },
     createdAt:{
         type:Date,
         default:Date.now()
