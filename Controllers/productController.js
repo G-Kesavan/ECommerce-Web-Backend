@@ -4,12 +4,18 @@ const catchAsyncError = require('../Middleware/catchAsyncError')
 const APIFeature = require('../utils/APIFeatures')
 
 exports.getAllProducts = async (req,res,next) =>{
-    const resPerPage = 3
-    const apiFeature = new APIFeature(Products.find(),req.query).search().filter().pageinte(resPerPage)
-    const products = await apiFeature.products;
+    const resPerPage = 4
+    const buildQuery = () =>{
+        return new APIFeature(Products.find(),req.query).search().filter()
+    }
+    const totalProductCount = await Products.countDocuments({})
+    const filterProductCount = await buildQuery().products.countDocuments({})
+    let sendProductCount = totalProductCount == filterProductCount ? totalProductCount : filterProductCount
+    const products = await buildQuery().pageinte(resPerPage).products;
     res.status(200).json({
         success : true,
-        count:products.length,
+        count:sendProductCount,
+        resPerPage,
         products
     })
 }

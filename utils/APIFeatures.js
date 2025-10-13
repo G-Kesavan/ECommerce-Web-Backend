@@ -5,9 +5,9 @@ class APIFeature {
     }
 
     search(){   //SEARCH FEATURES
-        let productName = this.query.productName?{
+        let productName = this.query.keyword?{
             name:{
-                $regex:this.query.productName,
+                $regex:this.query.keyword,
                 $options: 'i'
             }  
         }:{}
@@ -17,7 +17,7 @@ class APIFeature {
 
     filter() {      //FILTER FEATURES
         const queryCopy = { ...this.query };
-        const removeFields = ['productName', 'limit', 'page'];
+        const removeFields = ['keyword', 'limit', 'page'];
         removeFields.forEach(field => delete queryCopy[field]);
 
         const normalized = {};      //NORMALIZED
