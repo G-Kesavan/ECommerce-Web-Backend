@@ -12,7 +12,12 @@ const cors = require("cors");
 //MIDDLE WARES
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://project-emarket.web.app",
+    credentials: true,
+  })
+);
 app.use("/upload", express.static(path.join(__dirname, "upload")));
 
 app.use("/api/products", productsRoute);
