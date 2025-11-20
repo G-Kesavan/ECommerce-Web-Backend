@@ -12,6 +12,8 @@ const cors = require("cors");
 //MIDDLE WARES
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors())
+app.options("*",cors())
 app.use(
   cors({
     origin: "https://project-emarket.web.app",
