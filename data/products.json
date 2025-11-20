@@ -1,0 +1,374 @@
+[
+  {
+    "name": "Samsung Galaxy S24 Ultra 5G",
+    "price": 96999,
+    "description": "Samsung Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery",
+    "ratings": 4.6,
+    "images": [
+      {
+        "image": "/images/products/Samsung_s24_ulra(1).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(3).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(4).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(5).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(6).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(8).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(9).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(10).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_s24_ulra(11).jpg"
+      }
+    ],
+    "category": "Mobile Phone",
+    "seller": "Amazon",
+    "stock": 15,
+    "numOfReviews": 12,
+    "reviews": []
+  },
+  {
+    "name": "Redmi Note 14 Pro 5G",
+    "price": 45999,
+    "description": "Redmi Note 14 Pro 5G Titan Black 8GB RAM 256GB Storage|50 MP Sony Camera Setup|Corning Gorilla Glass Victus 2 | 1.5K 3D Curved AMOLED | Mediatek Dimensity 7300- Ultra",
+    "ratings": 3,
+    "images": [
+      {
+        "image": "/images/products/Redmi_14_pro(1).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(2).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(3).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(4).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(5).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(6).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(7).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(8).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(9).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(10).jpg"
+      },
+      {
+        "image": "/images/products/Redmi_14_pro(11).jpg"
+      }
+    ],
+    "category": "Mobile Phone",
+    "seller": "Amazon",
+    "stock": 10,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "Intel® CoreTM i5-14600K",
+    "price": 21999,
+    "description": "intel® CoreTM i5-14600K New Gaming Desktop Processor 14 (6 P-cores + 8 E-cores) with Integrated Graphics - Unlocked",
+    "ratings": 4,
+    "images": [
+      {
+        "image": "/images/products/Intel_i5_14600k(1).jpg"
+      },
+      {
+        "image": "/images/products/Intel_i5_14600k(2).jpg"
+      },
+      {
+        "image": "/images/products/Intel_i5_14600k(3).jpg"
+      },
+      {
+        "image": "/images/products/Intel_i5_14600k(4).jpg"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Amazon",
+    "stock": 10,
+    "numOfReviews": 11,
+    "reviews": []
+  },
+  {
+    "name": "GIGABYTE Z790 D AX Gaming Motherboard",
+    "price": 18999,
+    "description": "GIGABYTE Z790 D AX Gaming Motherboard – LGA1700, Supports Intel 14th/13th/12th Gen, DDR5, PCIe 5.0, Triple M.2, Wi-Fi 6E, 2.5Gb LAN, USB-C, HDMI, DisplayPort, ATX",
+    "ratings": 4.3,
+    "images": [
+      {
+        "image": "/images/products/Z790(1).jpg"
+      },
+      {
+        "image": "/images/products/Z790(2).jpg"
+      },
+      {
+        "image": "/images/products/Z790(3).jpg"
+      },
+      {
+        "image": "/images/products/Z790(4).jpg"
+      },
+      {
+        "image": "/images/products/Z790(5).jpg"
+      },
+      {
+        "image": "/images/products/Z790(6).jpg"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Amazon",
+    "stock": 9,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "Samsung 990 PRO SSD 1TB",
+    "price": 7599,
+    "description": "Samsung 990 PRO SSD 1TB PCIe 4.0 M.2 Internal SSD, Seq. Read Speeds Up to 7,450 MB/s for High End Computing, Gaming, Video Editing and Heavy Duty Workstations, MZ-V9P1T0BW.",
+    "ratings": 3,
+    "images": [
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(0).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(1).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(2).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(3).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(4).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(5).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(6).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(6).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(7).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(8).jpg"
+      },
+      {
+        "image": "/images/products/Samsung_Nvme_ssd(9).jpg"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Amazon",
+    "stock": 5,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "Rich Dad Poor Dad",
+    "price": 265,
+    "description": "April of 2022 marks a 25-year milestone for the personal finance classic Rich Dad Poor Dad that still ranks as the #1 Personal Finance book of all time. And although 25 years have passed since Rich Dad Poor Dad was first published, readers will find that very little in the book itself has changed — and for good reason.",
+    "ratings": 5,
+    "images": [
+      {
+        "image": "/images/products/Rich_dad_poor_dad(1).jpg"
+      },
+      {
+        "image": "/images/products/Rich_dad_poor_dad(2).jpg"
+      },
+      {
+        "image": "/images/products/Rich_dad_poor_dad(3).jpg"
+      },
+      {
+        "image": "/images/products/Rich_dad_poor_dad(4).jpg"
+      }
+    ],
+    "category": "Books",
+    "seller": "Amazon",
+    "stock": 500,
+    "numOfReviews": 156,
+    "reviews": []
+  },
+  {
+    "name": "iPhone 17 Pro Max 1 TB",
+    "price": 187999,
+    "description": "iPhone 17 Pro Max 1 TB: 17.42 cm (6.9″) Display with Promotion, A19 Pro Chip, Best Battery Life in Any iPhone Ever, Pro Fusion Camera System, Center Stage Front Camera; Deep Blue",
+    "ratings": 4.5,
+    "images": [
+      {
+        "image": "/images/products/IPhon_17ProMax(1).jpg"
+      },
+      {
+        "image": "/images/products/IPhon_17ProMax(2).jpg"
+      },
+      {
+        "image": "/images/products/IPhon_17ProMax(3).jpg"
+      },
+      {
+        "image": "/images/products/IPhon_17ProMax(4).jpg"
+      }
+    ],
+    "category": "Mobile Phone",
+    "seller": "Amazon",
+    "stock": 15,
+    "numOfReviews": 12,
+    "reviews": []
+  },
+  {
+    "name": "iQOO Z10 5G",
+    "price": 28999,
+    "description": "iQOO Z10 5G (Stellar Black, 8GB RAM, 128GB Storage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The SegmentiQOO Z10 5G (Stellar Black, 8GB RAM, 128GB Storage) | India's Biggest Ever 7300 mAh Battery | Snapdragon 7s Gen 3 Processor | Brightest Quad Curved AMOLED Display in The Segment",
+    "ratings": 4.1,
+    "images": [
+      {
+        "image": "/images/products/IQ_Z10(1).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Z10(2).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Z10(3).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Z10(4).jpg"
+      }
+    ],
+    "category": "Mobile Phone",
+    "seller": "Amazon",
+    "stock": 10,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "iQOO Neo 10R 5G",
+    "price": 24999,
+    "description": "iQOO Neo 10R 5G (Moonknight Titanium, 8GB RAM, 256GB Storage) | Snapdragon 8s Gen 3 Processor | India's Slimmest 6400mAh Battery Smartphone | Segment's Most Stable 90FPS for 5 Hours",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "/images/products/IQ_Neo10R(1).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Neo10R(2).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Neo10R(3).jpg"
+      },
+      {
+        "image": "/images/products/IQ_Neo10R(4).jpg"
+      }
+    ],
+    "category": "Mobile Phone",
+    "seller": "Amazon",
+    "stock": 10,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "Hero MotoCorp XTREME 125R",
+    "price": 95275,
+    "description": "Hero MotoCorp XTREME 125R FI ABS SEAT DSSC (OBD2B) Motorcycles/Bike Cocktail Blue Booking for Ex-Showroom Price",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "/images/products/Hero_Xtrim_125r(1).jpg"
+      },
+      {
+        "image": "/images/products/Hero_Xtrim_125r(2).jpg"
+      },
+      {
+        "image": "/images/products/Hero_Xtrim_125r(3).jpg"
+      },
+      {
+        "image": "/images/products/Hero_Xtrim_125r(4).jpg"
+      },
+      {
+        "image": "/images/products/Hero_Xtrim_125r(5).jpg"
+      }
+    ],
+    "category": "Bike",
+    "seller": "Amazon",
+    "stock": 9,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "Puma White casual Shoe",
+    "price": 1299,
+    "description": "Designed for daily runs, gym sessions, and casual outings, offering versatile athletic performance. Breathable mesh upper ensures optimal airflow, keeping feet cool and comfortable during activities.​",
+    "ratings": 2,
+    "images": [
+      {
+        "image": "/images/products/Puma_Shoe(1).jpg"
+      },
+      {
+        "image": "/images/products/Puma_Shoe(2).jpg"
+      },
+      {
+        "image": "/images/products/Puma_Shoe(3).jpg"
+      },
+      {
+        "image": "/images/products/Puma_Shoe(4).jpg"
+      }
+    ],
+    "category": "ClothesShoes",
+    "seller": "Amazon",
+    "stock": 5,
+    "numOfReviews": 14,
+    "reviews": []
+  },
+  {
+    "name": "MSI Katana 15",
+    "price": 126999,
+    "description": "MSI Katana 15, Intel 14th Gen. i9-14900HX, 40cm QHD 165Hz Gaming Laptop (16GB/1TB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 5060, GDDR7 8GB/Black/2.4Kg) B14WFK-261IN",
+    "ratings": 4.9,
+    "images": [
+      {
+        "image": "/images/products/MSI_Katana_15(1).jpg"
+      },
+      {
+        "image": "/images/products/MSI_Katana_15(2).jpg"
+      },
+      {
+        "image": "/images/products/MSI_Katana_15(3).jpg"
+      },
+      {
+        "image": "/images/products/MSI_Katana_15(4).jpg"
+      },
+      {
+        "image": "/images/products/MSI_Katana_15(5).jpg"
+      },
+      {
+        "image": "/images/products/MSI_Katana_15(6).jpg"
+      }
+    ],
+    "category": "Laptop",
+    "seller": "Amazon",
+    "stock": 500,
+    "numOfReviews": 156,
+    "reviews": []
+  }
+]
