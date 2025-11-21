@@ -4,6 +4,16 @@ const jwt = require("jsonwebtoken");
 const User = require("../Model/userModel");
 
 exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
+  const checkAuthCookie = (req, res, next) => {
+    if (!req.cookies?.token) {
+      return res.status(401).json({
+        success: false,
+        message: "Not logged in",
+      });
+    }
+    next();
+  };
+  checkAuthCookie(req, res, next);
   const { token } = req.cookies;
 
   if (!token) {
@@ -18,6 +28,16 @@ exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
 
   req.user = await User.findById(deCoded.id);
 
+  next();
+});
+
+exports.checkAuthCookie = catchAsyncError(async(req, res, next) => {
+  if (!req.cookies?.token) {
+    return res.status(401).json({
+      success: false,
+      message: "Not logged in",
+    });
+  }
   next();
 });
 
