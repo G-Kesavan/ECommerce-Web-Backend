@@ -18,6 +18,8 @@ app.use(
     credentials: true,
   })
 );
+app.options(/^\/.*/, cors());
+
 app.use("/upload", express.static(path.join(__dirname, "upload")));
 
 app.use("/api/products", productsRoute);
