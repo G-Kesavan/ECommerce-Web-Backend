@@ -6,7 +6,9 @@ const sendToken = (user, statusCode, res, message) => {
     ),
     httpOnly: true,
     secure: true,
-    sameSite:"none"
+    sameSite:"none",
+    path: "/",
+    domain: "voluminous-paula-kesavan-e6ec1328.koyeb.app",
   };
   res.status(statusCode).cookie("token", token, option).json({
     success: true,
