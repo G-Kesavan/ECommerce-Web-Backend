@@ -6,7 +6,7 @@ const User = require("../Model/userModel");
 exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
   const { token } = req.cookies;
 
-  if (!token || !req.cookies.token || !req.cookies.token===undefined) {
+  if (!token) {
     return next(new ErrorHandler("login first to handle this resource", 401));
   }
 
@@ -20,6 +20,17 @@ exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
 
   next();
 });
+
+exports.checkAuthCookie = (req, res, next) => {
+  if (!req.cookies.token) {
+    return res.status(200).json({
+      success: false,
+      message: "Not logged in",
+      user: null,
+    });
+  }
+  next();
+};
 
 exports.authorizeRoles = (...roles) => {
   return (req, res, next) => {
