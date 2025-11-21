@@ -23,11 +23,7 @@ exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
 
 exports.checkAuthCookie = (req, res, next) => {
   if (!req.cookies.token) {
-    return res.status(200).json({
-      success: false,
-      message: "Not logged in",
-      user: null,
-    });
+    return next(new ErrorHandler("User is not login...", 401));
   }
   next();
 };

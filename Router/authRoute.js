@@ -38,7 +38,7 @@ router.route("/login").post(loginUser);
 router.route("/logout").get(logOut);
 router.route("/password-forgot").post(forgotPassword);
 router.route("/password-reset/:token").post(resetPassword);
-router.route("/my-profile").get(checkAuthCookie,isAuthenticatedUser, getUserProfile);
+router.route("/my-profile").get(console.log((req,res,next)=>{return req.cookies}),checkAuthCookie,isAuthenticatedUser, getUserProfile);
 router.route("/password-change").put(isAuthenticatedUser, changePassword);
 router
   .route("/profile-update")
