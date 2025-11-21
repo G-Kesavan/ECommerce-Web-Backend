@@ -25,7 +25,7 @@ exports.checkAuthCookie = (req, res, next) => {
   if (!req.cookies.token) {
     return res.status(401).json({
       success: false,
-      notLogin:true
+      message:"User not login..."
     });
   }
   next();
