@@ -6,7 +6,8 @@ const sendToken = (user, statusCode, res, message) => {
     ),
     httpOnly: true,
     secure: true,
-    sameSite:"none"
+    sameSite: "none",
+    path: "/",
   };
   res.status(statusCode).cookie("token", token, option).json({
     success: true,

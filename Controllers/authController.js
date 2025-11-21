@@ -49,7 +49,9 @@ exports.logOut = (req, res, next) => {
     .cookie("token", "", {
       expires: new Date(0),
       httpOnly: true,
-      sameSite:"none"
+      secure: true,
+      sameSite: "none",
+      path: "/",
     })
     .status(200)
     .json({
@@ -150,7 +152,7 @@ exports.changePassword = catchAsyncError(async (req, res, next) => {
     success: true,
     message: "Password is changed successfully",
   });
-}); 
+});
 
 exports.updateProfile = catchAsyncError(async (req, res, next) => {
   let avatar;
