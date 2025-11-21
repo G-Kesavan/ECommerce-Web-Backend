@@ -10,12 +10,16 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 //MIDDLE WARES
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
     origin: "https://project-emarket.web.app",
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    optionsSuccessStatus: 204,
   })
 );
 app.options(/^\/.*/, cors());
