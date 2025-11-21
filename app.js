@@ -12,10 +12,9 @@ const cors = require("cors");
 //MIDDLE WARES
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
 app.use(
   cors({
-    origin: "https://project-emarket.web.app/",
+    origin: "https://project-emarket.web.app",
     credentials: true,
   })
 );
