@@ -31,6 +31,15 @@ app.use("/api/auth", authRoute);
 app.use("/api/order", orderRouter);
 app.use("/api/payment", paymentRoute);
 
+app.use((err, req, res, next) => {
+  err.statusCode = err.statusCode || 500;
+
+  return res.status(err.statusCode).json({
+    success: false,
+    message: err.message || "Something went wrong",
+  });
+});
+
 app.use(catchError);
 
 module.exports = app;
