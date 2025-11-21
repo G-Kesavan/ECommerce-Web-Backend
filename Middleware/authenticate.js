@@ -21,16 +21,6 @@ exports.isAuthenticatedUser = catchAsyncError(async (req, res, next) => {
   next();
 });
 
-exports.checkAuthCookie = (req, res, next) => {
-  if (!req.cookies.token) {
-    return res.status(401).json({
-      success: false,
-      message:"User not login..."
-    });
-  }
-  next();
-};
-
 exports.authorizeRoles = (...roles) => {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
