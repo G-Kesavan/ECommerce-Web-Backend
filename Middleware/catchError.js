@@ -1,49 +1,55 @@
 const ErrorHandler = require("../utils/errorHandler");
 
-module.exports = (err,req,res,next) => {
+module.exports = (err, req, res, next) => {
     err.statusCode = err.statusCode || 500;
+    err.message = err.message || "Something went wrong";
 
-    if(process.env.NODE_ENV == 'development'){
-        res.status(err.statusCode).json({
-            succes : false,
-            message : err.message,
-            stack:err.stack,
-            error:err
-        })
+    // Development mode
+    if (process.env.NODE_ENV === "development") {
+        return res.status(err.statusCode).json({
+            success: false,
+            message: err.message,
+            error: err,
+            stack: err.stack
+        });
     }
-   
-    if(process.env.NODE_ENV == 'production'){
-        let message = err.message;
-        let error = new Error(message);
 
+    // Production mode
+    if (process.env.NODE_ENV === "production") {
+        let error = { ...err };
+        error.message = err.message;
+
+        // Mongoose Validation Error
         if (err.name === "ValidationError") {
-            message = Object.values(err.errors).map(value => value.message);
+            const message = Object.values(err.errors).map(value => value.message).join(", ");
             error = new ErrorHandler(message, 400);
         }
 
+        // Wrong MongoDB ID
         if (err.name === "CastError") {
-            message = `Resource not found ${err.path}`;
+            const message = `Resource not found: ${err.path}`;
             error = new ErrorHandler(message, 400);
         }
 
+        // Duplicate key error
         if (err.code === 11000) {
-            message = `Duplicate ${Object.keys(err.keyValue)} error `;
+            const message = `Duplicate field: ${Object.keys(err.keyValue)}`;
             error = new ErrorHandler(message, 400);
         }
 
-        if (err.name === 'JSONWedTokenError') {
-            message = `Json webtoken is invalied error `;
-            error = new ErrorHandler(message, 400);
+        // JWT error
+        if (err.name === "JsonWebTokenError") {
+            error = new ErrorHandler("Invalid JSON Web Token", 401);
         }
 
-        if (err.name === 'TokenExpiredError') {
-            message = `Json webtoken is expired error `;
-            error = new ErrorHandler(message, 400);
+        // JWT expired
+        if (err.name === "TokenExpiredError") {
+            error = new ErrorHandler("JSON Web Token expired", 401);
         }
 
-        res.status(err.statusCode).json({
-            succes : false,
-            message : error.message
-        })
+        return res.status(error.statusCode || 500).json({
+            success: false,
+            message: error.message || "Something went wrong",
+        });
     }
-}
+};
