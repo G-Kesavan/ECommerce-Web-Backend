@@ -47,11 +47,14 @@ exports.loginUser = catchAsyncError(async (req, res, next) => {
 exports.logOut = (req, res, next) => {
   res
     .cookie("token", "", {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none",
-    path: "/",        // VERY IMPORTANT
-    expires: new Date(0),
+      expires: new Date(0),
+      httpOnly: true,
+      sameSite:"none"
+    })
+    .status(200)
+    .json({
+      success: true,
+      message: "Logout successfully",
     });
 };
 
